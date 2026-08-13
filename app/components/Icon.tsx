@@ -17,6 +17,9 @@ import {
   Wrench,
   HardHat,
   Sprout,
+  Layers,
+  Database,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 
@@ -39,6 +42,9 @@ const map: Record<string, LucideIcon> = {
   Wrench,
   HardHat,
   Sprout,
+  Layers,
+  Database,
+  Sparkles,
 };
 
 export function Icon({

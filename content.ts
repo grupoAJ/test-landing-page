@@ -8,35 +8,29 @@
 
 export const brand = {
   name: "Born ERP",
-  tagline: "El ERP que conecta todo tu negocio",
+  tagline: "Industrial Business OS",
+  description:
+    "ERP industrial a medida para fabricantes que han superado Excel, pero para los que un gran ERP resulta demasiado complejo, rígido o costoso.",
 };
 
 export const nav = [
-  { label: "Módulos", href: "#modulos" },
-  { label: "Cómo funciona", href: "#flujo" },
-  { label: "Beneficios", href: "#beneficios" },
+  { label: "Capacidades", href: "#modulos" },
+  { label: "IA", href: "#ia" },
+  { label: "Implantación", href: "#implantacion" },
   { label: "Planes", href: "#planes" },
   { label: "Preguntas", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
 
 export const hero = {
-  eyebrow: "Plataforma de gestión integral",
-  title: "Toda tu operación en un solo sistema",
+  eyebrow: "Industrial Business OS",
+  title: "El ERP para fabricantes que han superado Excel",
   subtitle:
-    "Presupuestos, producción, stock, ventas, finanzas y equipo — conectados de punta a punta. Menos planillas sueltas, más decisiones con datos reales.",
+    "Presupuestos, costes, compras, fabricación, stock, logística y finanzas en una única plataforma diseñada alrededor de tu operación. Sin la complejidad de un gran ERP.",
   ctaPrimary: { label: "Solicitar demo", href: "#contacto" },
-  ctaSecondary: { label: "Ver módulos", href: "#modulos" },
-  microcopy: "Demo sin compromiso · En la nube · Español / Inglés",
+  ctaSecondary: { label: "Ver planes", href: "#planes" },
+  microcopy: "Flexible como tus procesos · Integrado como un gran ERP",
 };
-
-// Barra de datos rápidos debajo del hero (cifras ilustrativas del producto)
-export const stats = [
-  { value: "12", label: "módulos que trabajan como uno" },
-  { value: "1", label: "única fuente de verdad" },
-  { value: "∞", label: "empresas en una sola cuenta" },
-  { value: "24/7", label: "en la nube, desde donde estés" },
-];
 
 // Chips de la barra de confianza (debajo del hero)
 export const trustChips = [
@@ -45,93 +39,97 @@ export const trustChips = [
   "En la nube",
   "Roles y permisos",
   "Bitácora de auditoría",
+  "API e integraciones",
   "Español / Inglés",
 ];
 
-// Sectores donde encaja (reemplaza a los logos genéricos de otras landings)
-export const sectors = [
-  { icon: "Factory", label: "Manufactura" },
-  { icon: "Truck", label: "Distribución" },
-  { icon: "ShoppingCart", label: "Retail y mayorista" },
-  { icon: "Wrench", label: "Servicios" },
-  { icon: "HardHat", label: "Construcción" },
-  { icon: "Sprout", label: "Agro" },
-];
+// Cadena de proceso industrial (banda oscura debajo del hero).
+// Representa el hilo que conecta toda la operación en una sola plataforma.
+export const processChain = {
+  title: "Del presupuesto al cobro, en un mismo flujo",
+  subtitle:
+    "Una sola plataforma conecta lo que hoy vive repartido entre Excel, email, WhatsApp y software desconectado.",
+  steps: [
+    { icon: "Calculator", label: "Presupuestos" },
+    { icon: "KanbanSquare", label: "Proyectos" },
+    { icon: "ShoppingCart", label: "Compras" },
+    { icon: "Factory", label: "Fabricación" },
+    { icon: "Boxes", label: "Stock" },
+    { icon: "Truck", label: "Logística" },
+    { icon: "LineChart", label: "Finanzas" },
+  ],
+};
+
+// Sectores donde encaja (nicho industrial defendible)
+export const sectors = {
+  eyebrow: "Pensado para operaciones como la tuya",
+  title: "Fabricantes de 10 a 100 personas que producen por proyecto, pedido o serie corta",
+  items: [
+    { icon: "Factory", label: "Estructuras metálicas" },
+    { icon: "Wrench", label: "Mecanizado" },
+    { icon: "HardHat", label: "Carpintería industrial" },
+    { icon: "Boxes", label: "Aluminio y vidrio" },
+    { icon: "KanbanSquare", label: "Ingeniería por proyecto" },
+    { icon: "Building2", label: "Instalaciones y equipamiento" },
+  ],
+};
 
 // Íconos: usar nombres de lucide-react (ver app/components/Icon.tsx)
 // `tone` define el color del ícono (ver toneStyles en app/page.tsx)
 export const modules = [
   {
+    icon: "Users",
+    tone: "blue",
+    title: "Comercial y clientes",
+    desc: "Clientes, presupuestos versionados, precios y márgenes, ligados a cada proyecto.",
+  },
+  {
     icon: "Calculator",
     tone: "sky",
-    title: "Presupuestos y tarificación",
-    desc: "Configurá productos a medida y cotizá en segundos, con costos y márgenes siempre actualizados.",
-  },
-  {
-    icon: "Factory",
-    tone: "orange",
-    title: "Fabricación y producción",
-    desc: "Órdenes de fabricación, listas de materiales y un monitor de planta en tiempo real.",
-  },
-  {
-    icon: "Boxes",
-    tone: "emerald",
-    title: "Inventario y stock",
-    desc: "Control por depósito, reservas y alertas de mínimos. Sin sorpresas en el conteo.",
+    title: "Presupuestos y costes",
+    desc: "Configurá productos a medida y cotizá con costos y márgenes siempre actualizados.",
   },
   {
     icon: "ShoppingCart",
     tone: "violet",
     title: "Compras y proveedores",
-    desc: "Órdenes de compra, recepciones y pagos, con las cuentas por pagar siempre claras.",
+    desc: "Pedidos, cotización, recepción y reposición, con las cuentas por pagar siempre claras.",
   },
   {
-    icon: "Users",
-    tone: "blue",
-    title: "Ventas y clientes",
-    desc: "Ficha de cliente 360°, ventas de mostrador, albaranes y facturación con PDF.",
+    icon: "Factory",
+    tone: "orange",
+    title: "Fabricación / OF",
+    desc: "Órdenes de fabricación, consumos y un monitor de planta en tiempo real.",
+  },
+  {
+    icon: "Layers",
+    tone: "emerald",
+    title: "BOM y despieces",
+    desc: "Listas de materiales y costes industriales reales para cada producto.",
+  },
+  {
+    icon: "Boxes",
+    tone: "teal",
+    title: "Stock e inventario",
+    desc: "Control por depósito, reservas, ingresos de material y trazabilidad completa.",
   },
   {
     icon: "Truck",
     tone: "amber",
     title: "Logística y envíos",
-    desc: "Planificá despachos y transportistas, con los costos de flete prorrateados solos.",
+    desc: "Despachos y transportistas, con los costos de flete prorrateados solos.",
   },
   {
     icon: "LineChart",
-    tone: "teal",
-    title: "Tesorería y finanzas",
-    desc: "Cobros, cuentas por cobrar y proyección de caja en tableros que se entienden.",
-  },
-  {
-    icon: "Clock",
-    tone: "rose",
-    title: "Recursos humanos",
-    desc: "Fichajes, control de horas y vacaciones, integrados con el resto del sistema.",
-  },
-  {
-    icon: "BarChart3",
     tone: "indigo",
-    title: "Informes y BI",
-    desc: "Tableros y reportes que se arman solos, filtrables por empresa, período y rol.",
-  },
-  {
-    icon: "FileText",
-    tone: "cyan",
-    title: "Documentos",
-    desc: "Presupuestos, albaranes y facturas en PDF, con numeración y plantillas propias.",
-  },
-  {
-    icon: "KanbanSquare",
-    tone: "fuchsia",
-    title: "Proyectos y tareas",
-    desc: "Organizá el trabajo por tablero, asigná responsables y seguí cada avance.",
+    title: "Finanzas y tesorería",
+    desc: "Cobros, gastos, tesorería e indicadores de gestión en tableros que se entienden.",
   },
   {
     icon: "Building2",
     tone: "lime",
-    title: "Multiempresa",
-    desc: "Varias razones sociales en un mismo login, aisladas y consolidables cuando lo necesites.",
+    title: "Multiempresa y multimoneda",
+    desc: "Varias razones sociales en un mismo login, aisladas y consolidables cuando quieras.",
   },
 ];
 
@@ -139,16 +137,22 @@ export const modules = [
 export const integration = {
   eyebrow: "Un solo sistema",
   title: "Un dato se carga una vez. El resto se actualiza solo.",
-  desc: "En Born ERP los módulos no son islas: comparten una misma base. Cuando aprobás un presupuesto, la producción, el stock, la logística y las finanzas ya lo saben. Sin reescribir nada, sin planillas que no coinciden.",
+  desc: "En Born ERP los módulos no son islas: comparten una misma base. Cuando aprobás un presupuesto, la compra, la fabricación, el stock, la logística y las finanzas ya lo saben. Sin reescribir nada, sin planillas que no coinciden.",
   hub: "Base de datos única",
   spokes: [
     { icon: "Calculator", label: "Presupuestos" },
-    { icon: "Factory", label: "Producción" },
+    { icon: "ShoppingCart", label: "Compras" },
+    { icon: "Factory", label: "Fabricación" },
     { icon: "Boxes", label: "Stock" },
     { icon: "Truck", label: "Logística" },
     { icon: "LineChart", label: "Finanzas" },
-    { icon: "Users", label: "Ventas" },
   ],
+};
+
+// Cita / posicionamiento — banda destacada
+export const quote = {
+  text: "No adaptamos tu empresa al ERP. Adaptamos el ERP a tu empresa.",
+  sub: "Una base sólida de ERP con capacidad real de adaptar workflows, datos e integraciones a la forma en que trabaja tu empresa.",
 };
 
 // Bloques de features alternados (imagen + texto)
@@ -156,32 +160,32 @@ export const features = [
   {
     tag: "Flujo integrado",
     title: "Del presupuesto a la factura, sin recargar datos",
-    desc: "Una cotización aprobada se convierte en orden de fabricación, albarán y factura sin volver a tipear nada. Todo queda enlazado y trazable.",
+    desc: "Una cotización aprobada se convierte en compra, orden de fabricación, albarán y factura sin volver a tipear nada. Todo queda enlazado y trazable.",
     bullets: [
-      "Cotización → producción → entrega → factura",
+      "Presupuesto → compra → producción → entrega → factura",
       "Cada documento hereda del anterior",
-      "Historial completo por cliente y por pedido",
+      "Historial completo por cliente, proyecto y pedido",
     ],
     mockup: "flow",
   },
   {
     tag: "Producción",
     title: "Tu planta, en tiempo real",
-    desc: "Seguí cada orden de fabricación mientras avanza. Cronómetro de tareas, parte diario y un monitor que te dice dónde está cada cosa.",
+    desc: "Seguí cada orden de fabricación mientras avanza. Consumo de materiales, parte diario y un monitor que te dice dónde está cada cosa.",
     bullets: [
       "Monitor de producción en vivo",
-      "Cronómetro por tarea y operario",
       "Consumo de materiales al instante",
+      "Alertas de faltantes antes de lanzar una OF",
     ],
     mockup: "production",
   },
   {
-    tag: "Finanzas",
-    title: "Las finanzas, siempre bajo control",
-    desc: "Cobros, pagos y proyección de caja en un mismo lugar. Y una regla de oro: el sistema nunca inventa un número que no conoce.",
+    tag: "Costes y finanzas",
+    title: "Costes reales, finanzas bajo control",
+    desc: "Del coste industrial de cada producto a la proyección de caja. Y una regla de oro: el sistema nunca inventa un número que no conoce.",
     bullets: [
-      "Proyección de flujo de caja",
-      "Cuentas por cobrar y por pagar",
+      "Coste real por producto y proyecto",
+      "Cobros, pagos y proyección de flujo de caja",
       "Tableros configurables por rol",
     ],
     mockup: "finance",
@@ -189,7 +193,7 @@ export const features = [
   {
     tag: "Multiempresa",
     title: "Varias empresas, un solo login",
-    desc: "Gestioná todas tus razones sociales desde una misma cuenta, con los datos de cada una perfectamente aislados y consolidables cuando lo necesités.",
+    desc: "Gestioná todas tus razones sociales desde una misma cuenta, con los datos de cada una perfectamente aislados y consolidables cuando lo necesites.",
     bullets: [
       "Datos aislados por empresa",
       "Vista consolidada para dirección",
@@ -199,62 +203,136 @@ export const features = [
   },
 ];
 
-// Cómo funciona — pasos numerados de la cadena comercial
-export const workflow = {
-  eyebrow: "Cómo funciona",
-  title: "Un flujo, del pedido al cobro",
-  desc: "Cada paso alimenta al siguiente. Cargás una vez y el sistema se encarga de que todo lo demás quede al día.",
-  steps: [
+// IA aplicada — el segundo gran diferencial
+export const ai = {
+  eyebrow: "Preparado para IA",
+  title: "IA aplicada donde realmente aporta valor",
+  desc: "No es “un ERP con IA” más. La automatización y los agentes se incorporan en los puntos donde ahorran tiempo y evitan errores.",
+  items: [
+    {
+      icon: "ShoppingCart",
+      title: "Compras",
+      desc: "Analiza cotizaciones de proveedores y recomienda alternativas.",
+    },
     {
       icon: "Calculator",
-      title: "Cotizás",
-      desc: "Armás el presupuesto con costos y márgenes al día, en minutos.",
+      title: "Presupuestos",
+      desc: "Detecta anomalías de costes o márgenes antes de enviar.",
+    },
+    {
+      icon: "Boxes",
+      title: "Stock",
+      desc: "Sugerencias de reposición según consumo y demanda.",
     },
     {
       icon: "Factory",
-      title: "Producís",
-      desc: "Se genera la orden de fabricación y se descuentan los materiales.",
+      title: "Producción",
+      desc: "Alertas de materiales faltantes antes de lanzar una OF.",
     },
     {
-      icon: "Truck",
-      title: "Entregás",
-      desc: "Albarán y logística, con los costos de flete prorrateados solos.",
+      icon: "FileText",
+      title: "Documentos",
+      desc: "Lee albaranes, facturas, pedidos y ofertas en PDF.",
     },
     {
-      icon: "LineChart",
-      title: "Cobrás",
-      desc: "Factura, cuenta corriente y proyección de caja, todo enlazado.",
+      icon: "Sparkles",
+      title: "Dirección",
+      desc: "Preguntá: “¿Qué proyectos tienen margen inferior al 20%?”",
     },
   ],
 };
 
+// Implantación — "la implantación forma parte del producto"
+export const implementation = {
+  eyebrow: "Implantación",
+  title: "La implantación forma parte del producto",
+  desc: "Un ERP industrial no se instala como una app genérica. Lo configuramos alrededor de tus procesos reales y migramos tu información para que genere valor desde el primer día.",
+  steps: [
+    {
+      n: "01",
+      title: "Discovery",
+      desc: "Mapeo de procesos, responsables, datos, sistemas actuales y prioridades.",
+    },
+    {
+      n: "02",
+      title: "Configuración",
+      desc: "Maestros, permisos, módulos, workflows y reglas de negocio.",
+    },
+    {
+      n: "03",
+      title: "Migración",
+      desc: "Importación y depuración de artículos, clientes, proveedores y datos.",
+    },
+    {
+      n: "04",
+      title: "Puesta en marcha",
+      desc: "Pruebas, formación, acompañamiento y transición progresiva.",
+    },
+    {
+      n: "05",
+      title: "Evolución",
+      desc: "Nuevos módulos, automatizaciones, integraciones, dashboards e IA.",
+    },
+  ],
+  model: [
+    {
+      title: "Implementación",
+      desc: "Proyecto inicial según alcance.",
+      value: "Desde €4.900",
+    },
+    {
+      title: "Suscripción ERP",
+      desc: "Licencia, hosting, actualizaciones y soporte.",
+      value: "Desde €390 / mes",
+    },
+    {
+      title: "Desarrollo & IA",
+      desc: "Integraciones, automatizaciones y desarrollos específicos.",
+      value: "Bajo presupuesto",
+    },
+  ],
+};
+
+// Diferenciales — "¿Por qué Born ERP?"
 export const benefits = [
   {
+    icon: "Factory",
+    title: "Diseñado para industria",
+    desc: "BOM, fabricación, compras, stock, logística y costes forman parte del ADN del producto.",
+  },
+  {
+    icon: "Wrench",
+    title: "A medida sin empezar de cero",
+    desc: "Una base sólida de ERP con capacidad real de adaptar workflows, datos e integraciones.",
+  },
+  {
     icon: "LayoutGrid",
-    title: "Todo en un solo lugar",
-    desc: "Se acabaron las diez planillas que no coinciden. Una sola fuente de verdad para todo el negocio.",
+    title: "Menos complejidad",
+    desc: "La potencia para operar una empresa industrial sin una implantación interminable.",
   },
   {
-    icon: "ShieldCheck",
-    title: "Datos en los que confiás",
-    desc: "Nunca supone precios ni valores: lo que no se conoce se informa aparte, jamás como cero.",
+    icon: "Database",
+    title: "Datos conectados",
+    desc: "Una misma información acompaña desde el presupuesto hasta fabricación, entrega y finanzas.",
   },
   {
-    icon: "Building2",
-    title: "Multiempresa y multimoneda",
-    desc: "Pensado desde el día uno para operar varias empresas y monedas sin malabares.",
+    icon: "Sparkles",
+    title: "Preparado para IA",
+    desc: "Automatizaciones y agentes donde aportan valor real: documentos, compras, análisis y alertas.",
   },
   {
-    icon: "History",
-    title: "Seguro y auditable",
-    desc: "Roles y permisos por módulo, más una bitácora que registra quién cambió qué y cuándo.",
+    icon: "Users",
+    title: "Acompañamiento directo",
+    desc: "Un equipo que entiende tanto el software como el día a día de una empresa industrial.",
   },
 ];
 
 // Tabla comparativa — el "antes y después"
 export const comparison = {
   eyebrow: "Por qué cambiar",
-  title: "Planillas sueltas vs. Born ERP",
+  title: "Excel ya no alcanza. Un gran ERP te queda grande.",
+  subtitle:
+    "El salto de las planillas sueltas a una operación conectada, sin implantar un ERP sobredimensionado.",
   before: "Planillas sueltas",
   after: "Born ERP",
   rows: [
@@ -269,19 +347,19 @@ export const comparison = {
       after: "Bitácora con usuario, fecha y detalle",
     },
     {
-      label: "Precios y costos",
+      label: "Precios y costes",
       before: "A mano y propensos a error",
-      after: "Cálculo automático con márgenes",
+      after: "Cálculo automático con márgenes reales",
+    },
+    {
+      label: "Producción",
+      before: "Faltantes que se descubren tarde",
+      after: "OF, BOM y consumos conectados al stock",
     },
     {
       label: "Multiempresa",
       before: "Una carpeta por empresa",
       after: "Un login, aislado y consolidable",
-    },
-    {
-      label: "Reportes",
-      before: "Copiar y pegar cada viernes",
-      after: "Tableros en vivo por rol",
     },
     {
       label: "Escalar",
@@ -299,73 +377,85 @@ export const testimonials = {
       quote:
         "Dejamos de perseguir versiones de planillas. Ahora todos miran el mismo número.",
       author: "Dirección de Operaciones",
-      role: "Pyme industrial",
+      role: "Fabricante de estructuras metálicas",
     },
     {
-      quote:
-        "Cotizar pasó de horas a minutos, y con márgenes que sí cierran.",
+      quote: "Cotizar pasó de horas a minutos, y con márgenes que sí cierran.",
       author: "Responsable Comercial",
-      role: "Distribuidora",
+      role: "Ingeniería por proyecto",
     },
     {
       quote:
-        "Ver la caja proyectada cambió por completo cómo tomamos decisiones.",
+        "Ver los costes reales y la caja proyectada cambió cómo tomamos decisiones.",
       author: "Administración",
-      role: "Grupo multiempresa",
+      role: "Grupo industrial multiempresa",
     },
   ],
 };
 
-// Sección de planes — SOLO A MODO DE EJEMPLO
-// El pricing final está por definir. Todos los planes son para empresas
-// (multiempresa incluido) y el precio base contempla 15 usuarios.
-// Lo que cambia entre planes es el nivel de mantenimiento mensual.
+// Planes comerciales — Propuesta comercial 2026
 export const pricing = {
-  note: "Dato de prueba",
+  note: "Precios orientativos para lanzamiento",
   subnote:
-    "El pricing final está por definir. Todos los planes incluyen el sistema completo para empresas y una base de 15 usuarios; lo que cambia es el mantenimiento mensual.",
+    "Tres niveles claros. El producto evoluciona con la complejidad de tu empresa: no pagás desde el primer día por capacidades que todavía no necesitás.",
+  disclaimer:
+    "La propuesta final depende del alcance, migración, integraciones y necesidades de implantación.",
   plans: [
     {
-      name: "Starter",
-      price: "—",
-      period: "mantenimiento básico",
-      desc: "El sistema completo, con el mantenimiento mensual esencial.",
+      name: "Core",
+      price: "€390",
+      period: "/ mes",
+      users: "Hasta 10 usuarios",
+      desc: "Centraliza tu empresa.",
       features: [
-        "Sistema completo para empresas",
-        "Multiempresa y multimoneda",
-        "Base para 15 usuarios",
-        "Mantenimiento mensual básico",
+        "Clientes y proveedores",
+        "Artículos y tarifas",
+        "Presupuestos y compras",
+        "Proyectos",
+        "Gastos y cobros",
+        "Dashboard operativo",
+        "Soporte estándar",
       ],
+      impl: "Implantación desde €4.900",
       cta: "Solicitar demo",
       highlighted: false,
     },
     {
-      name: "Profesional",
-      price: "—",
-      period: "mantenimiento prioritario",
-      desc: "Todo lo del sistema, con mantenimiento y soporte prioritarios.",
+      name: "Industrial",
+      price: "€690",
+      period: "/ mes",
+      users: "Hasta 25 usuarios",
+      desc: "Conecta toda tu operación industrial.",
       features: [
-        "Sistema completo para empresas",
+        "Todo lo de Core",
+        "Fabricación / OF",
+        "BOM y costes industriales",
+        "Stock y reservas",
+        "Ingreso de materiales",
+        "Logística",
         "Multiempresa y multimoneda",
-        "Base para 15 usuarios",
-        "Mantenimiento mensual prioritario",
-        "Soporte con tiempos de respuesta acordados",
+        "Soporte prioritario",
       ],
+      impl: "Implantación desde €8.900",
       cta: "Solicitar demo",
       highlighted: true,
     },
     {
-      name: "Empresa",
-      price: "—",
-      period: "mantenimiento dedicado",
-      desc: "Para operaciones que necesitan acompañamiento dedicado.",
+      name: "Scale",
+      price: "Desde €1.290",
+      period: "/ mes",
+      users: "Hasta 50 usuarios",
+      desc: "Automatiza y escala.",
       features: [
-        "Sistema completo para empresas",
-        "Multiempresa y multimoneda",
-        "Base para 15 usuarios (ampliable)",
-        "Mantenimiento mensual dedicado",
-        "Onboarding y soporte dedicado",
+        "Todo lo de Industrial",
+        "Multiempresa avanzada",
+        "Múltiples almacenes",
+        "API e integraciones",
+        "Automatizaciones personalizadas",
+        "IA aplicada a procesos",
+        "SLA y soporte dedicado",
       ],
+      impl: "Implantación desde €15.000",
       cta: "Hablar con ventas",
       highlighted: false,
     },
@@ -378,44 +468,44 @@ export const faq = {
   title: "Lo que solés preguntar",
   items: [
     {
+      q: "¿Sirve si fabrico por proyecto, pedido o serie corta?",
+      a: "Sí. Born ERP está pensado para fabricantes con presupuestos complejos, BOM, órdenes de fabricación, compras a múltiples proveedores y costes reales por proyecto.",
+    },
+    {
+      q: "¿Puedo empezar con lo básico y crecer después?",
+      a: "Sí. Arrancás con Core y subís a Industrial o Scale cuando tu operación lo pide, sin migrar de sistema ni perder datos.",
+    },
+    {
+      q: "¿Cobran por usuario?",
+      a: "No. El precio es por empresa y nivel de producto, con un número generoso de usuarios incluido. Así podés dar acceso a todo tu equipo sin pensar en licencias.",
+    },
+    {
+      q: "¿Cómo migro mi información de Excel?",
+      a: "La migración forma parte de la implantación: importamos y depuramos artículos, clientes, proveedores y los datos necesarios para que arranques con todo cargado.",
+    },
+    {
       q: "¿Es en la nube o hay que instalar algo?",
       a: "Es 100% en la nube: accedés desde el navegador, sin instalar nada y desde cualquier dispositivo.",
     },
     {
-      q: "¿Puedo empezar con pocos módulos?",
-      a: "Sí. Activás lo que necesitás hoy y sumás el resto cuando quieras, sin migrar de sistema.",
-    },
-    {
-      q: "¿Maneja varias empresas y monedas?",
-      a: "Sí, es multiempresa y multimoneda desde el día uno, con datos aislados y vista consolidada para dirección.",
-    },
-    {
-      q: "¿Qué pasa con los datos que no se conocen?",
-      a: "Nunca se inventan. Lo que el sistema no conoce se informa aparte, jamás como cero, para que confíes en cada número.",
-    },
-    {
       q: "¿Está disponible en español e inglés?",
       a: "Sí, la interfaz está en español e inglés, ideal para equipos y grupos con operación regional.",
-    },
-    {
-      q: "¿Cómo migro mi información actual?",
-      a: "Te acompañamos en el onboarding para cargar y migrar tus datos desde planillas u otros sistemas.",
     },
   ],
 };
 
 // Llamado a la acción final
 export const finalCta = {
-  title: "¿Listos para operar con datos reales?",
+  title: "¿Tu empresa ha superado Excel?",
   subtitle:
-    "Coordinamos una demo sin compromiso y te mostramos cómo se vería tu negocio dentro de Born ERP.",
+    "Analicemos tu operación y definamos el nivel de Born ERP que mejor encaja con tus procesos. Demo sin compromiso.",
   cta: { label: "Solicitar demo", href: "#contacto" },
 };
 
 export const contact = {
   title: "¿Lo vemos en acción?",
   subtitle:
-    "Contanos sobre tu operación y coordinamos una demo sin compromiso. Te mostramos cómo se vería tu negocio dentro del sistema.",
+    "Contanos sobre tu operación industrial y coordinamos una demo sin compromiso. Te mostramos cómo se vería tu negocio dentro de Born ERP.",
   email: "info@borncapitalsa.com",
   phone: "+54 9 263 479 3912",
   website: "www.borncapitalsa.com",
@@ -427,9 +517,9 @@ export const footer = {
     {
       title: "Producto",
       links: [
-        { label: "Módulos", href: "#modulos" },
-        { label: "Cómo funciona", href: "#flujo" },
-        { label: "Beneficios", href: "#beneficios" },
+        { label: "Capacidades", href: "#modulos" },
+        { label: "IA aplicada", href: "#ia" },
+        { label: "Implantación", href: "#implantacion" },
         { label: "Planes", href: "#planes" },
       ],
     },
@@ -437,7 +527,7 @@ export const footer = {
       title: "Recursos",
       links: [
         { label: "Preguntas frecuentes", href: "#faq" },
-        { label: "Comparativa", href: "#comparativa" },
+        { label: "Por qué cambiar", href: "#comparativa" },
       ],
     },
     {
