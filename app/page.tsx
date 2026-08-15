@@ -30,7 +30,6 @@ import {
   implementation,
   benefits,
   comparison,
-  testimonials,
   pricing,
   faq,
   finalCta,
@@ -633,41 +632,8 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ===================== TESTIMONIOS ===================== */}
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:py-28">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-amber-700 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300">
-            {testimonials.note}
-          </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
-            Lo que cambia en el día a día
-          </h2>
-        </Reveal>
-
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {testimonials.items.map((t, i) => (
-            <Reveal key={t.author} delay={i * 90}>
-              <figure className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-                <Quote className="h-8 w-8 text-brand-300 dark:text-brand-500/40" />
-                <blockquote className="mt-3 flex-1 text-slate-700 dark:text-slate-200">
-                  “{t.quote}”
-                </blockquote>
-                <figcaption className="mt-5 border-t border-slate-100 pt-4 dark:border-slate-800">
-                  <div className="text-sm font-semibold text-slate-900 dark:text-white">
-                    {t.author}
-                  </div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">
-                    {t.role}
-                  </div>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {/* ===================== FAQ ===================== */}
-      <section id="faq" className="bg-slate-50 py-20 sm:py-24 lg:py-28 dark:bg-slate-900/40">
+      <section id="faq" className="py-20 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <SectionHeader eyebrow={faq.eyebrow} title={faq.title} />
 

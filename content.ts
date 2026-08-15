@@ -369,30 +369,6 @@ export const comparison = {
   ],
 };
 
-// Testimonios — ILUSTRATIVOS (contenido de ejemplo para el boceto)
-export const testimonials = {
-  note: "Testimonios de ejemplo",
-  items: [
-    {
-      quote:
-        "Dejamos de perseguir versiones de planillas. Ahora todos miran el mismo número.",
-      author: "Dirección de Operaciones",
-      role: "Fabricante de estructuras metálicas",
-    },
-    {
-      quote: "Cotizar pasó de horas a minutos, y con márgenes que sí cierran.",
-      author: "Responsable Comercial",
-      role: "Ingeniería por proyecto",
-    },
-    {
-      quote:
-        "Ver los costes reales y la caja proyectada cambió cómo tomamos decisiones.",
-      author: "Administración",
-      role: "Grupo industrial multiempresa",
-    },
-  ],
-};
-
 // Planes comerciales — Propuesta comercial 2026
 export const pricing = {
   note: "Precios orientativos para lanzamiento",
