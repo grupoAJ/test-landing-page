@@ -769,7 +769,7 @@ export default function Page() {
           </div>
           <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-200 pt-6 text-sm text-slate-400 sm:flex-row dark:border-slate-800">
             <span>
-              © {brand.name}. {footer.disclaimer}
+              © {new Date().getFullYear()} {brand.legalName}. {footer.disclaimer}
             </span>
           </div>
         </div>

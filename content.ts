@@ -8,6 +8,7 @@
 
 export const brand = {
   name: "Born ERP",
+  legalName: "Born Capital",
   tagline: "Industrial Business OS",
   description:
     "ERP industrial a medida para fabricantes que han superado Excel, pero para los que un gran ERP resulta demasiado complejo, rígido o costoso.",
@@ -488,7 +489,7 @@ export const contact = {
 };
 
 export const footer = {
-  disclaimer: "Boceto de demostración · contenido y datos de ejemplo.",
+  disclaimer: "Todos los derechos reservados.",
   columns: [
     {
       title: "Producto",
